@@ -43,6 +43,12 @@ flutter_gen:
     flutter_svg: true
     #flare_flutter: true
     #rive: true
+  colors:
+    enabled: true
+    outputs:
+      class_name: AppColor
+    inputs:
+      - assets/color/colors.xml
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
