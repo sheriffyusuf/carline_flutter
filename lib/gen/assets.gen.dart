@@ -15,17 +15,29 @@ class $AssetsImagesGen {
   /// File path: assets/images/car_one.png
   AssetGenImage get carOne => const AssetGenImage('assets/images/car_one.png');
 
+  /// File path: assets/images/car_three.png
+  AssetGenImage get carThree =>
+      const AssetGenImage('assets/images/car_three.png');
+
   /// File path: assets/images/car_two.png
   AssetGenImage get carTwo => const AssetGenImage('assets/images/car_two.png');
 
+  /// File path: assets/images/icon_bg.png
+  AssetGenImage get iconBg => const AssetGenImage('assets/images/icon_bg.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [carOne, carTwo];
+  List<AssetGenImage> get values => [carOne, carThree, carTwo, iconBg];
 }
 
 class Assets {
   Assets._();
 
+  static const AssetGenImage icon = AssetGenImage('assets/icon.png');
   static const $AssetsImagesGen images = $AssetsImagesGen();
+  static const AssetGenImage logo = AssetGenImage('assets/logo.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [icon, logo];
 }
 
 class AssetGenImage {
