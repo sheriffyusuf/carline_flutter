@@ -17,12 +17,18 @@ class _$AppRouter extends RootStackRouter {
 
   @override
   final Map<String, PageFactory> pagesMap = {
+    OnboardingRoute.name: (routeData) {
+      return AdaptivePage<dynamic>(
+        routeData: routeData,
+        child: const OnboardingPage(),
+      );
+    },
     GettingStartedRoute.name: (routeData) {
       return AdaptivePage<dynamic>(
         routeData: routeData,
         child: const GettingStartedPage(),
       );
-    }
+    },
   };
 
   @override
@@ -30,14 +36,30 @@ class _$AppRouter extends RootStackRouter {
         RouteConfig(
           '/#redirect',
           path: '/',
-          redirectTo: '/getting-started',
+          redirectTo: '/onboarding',
           fullMatch: true,
+        ),
+        RouteConfig(
+          OnboardingRoute.name,
+          path: '/onboarding',
         ),
         RouteConfig(
           GettingStartedRoute.name,
           path: '/getting-started',
         ),
       ];
+}
+
+/// generated route for
+/// [OnboardingPage]
+class OnboardingRoute extends PageRouteInfo<void> {
+  const OnboardingRoute()
+      : super(
+          OnboardingRoute.name,
+          path: '/onboarding',
+        );
+
+  static const String name = 'OnboardingRoute';
 }
 
 /// generated route for
