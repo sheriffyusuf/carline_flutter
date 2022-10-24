@@ -17,9 +17,11 @@ dependencies:
   flutter_native_splash: ^2.2.11
   flutter_riverpod: ^2.0.2
   flutter_svg: ^1.1.5
+  font_awesome_flutter: ^10.2.1
   freezed_annotation: ^2.2.0
   google_fonts: ^3.0.1
   hooks_riverpod: ^2.0.2
+  icons_plus: ^3.0.0
   nb_utils: ^4.6.21
   riverpod_annotation: ^1.0.4
 
@@ -64,3 +66,4 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/
