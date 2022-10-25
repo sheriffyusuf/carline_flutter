@@ -286,6 +286,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_form_builder:
+    dependency: "direct main"
+    description:
+      name: flutter_form_builder
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "7.7.0"
   flutter_gen:
     dependency: "direct main"
     description:
@@ -464,6 +471,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.2.0"
+  intl:
+    dependency: transitive
+    description:
+      name: intl
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.17.0"
   io:
     dependency: transitive
     description:
@@ -812,6 +826,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.1"
+  tabler_icons:
+    dependency: "direct main"
+    description:
+      name: tabler_icons
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.3"
   term_glyph:
     dependency: transitive
     description:
