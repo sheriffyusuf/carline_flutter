@@ -1,3 +1,4 @@
+import 'package:carline_flutter/gen/colors.gen.dart';
 import 'package:carline_flutter/router/router.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       title: 'Carline',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: AppColor.primary,
         textTheme: GoogleFonts.urbanistTextTheme(
           TextTheme(
               headline3: boldTextStyle(
