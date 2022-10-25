@@ -17,7 +17,8 @@ class LoginPage extends HookWidget {
     return Scaffold(
         backgroundColor: Colors.white,
         body: AnnotatedRegion<SystemUiOverlayStyle>(
-          value: SystemUiOverlayStyle.light,
+          value:
+              const SystemUiOverlayStyle(statusBarBrightness: Brightness.light),
           child: SafeArea(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
