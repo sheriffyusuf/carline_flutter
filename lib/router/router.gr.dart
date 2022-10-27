@@ -35,6 +35,12 @@ class _$AppRouter extends RootStackRouter {
         child: const LoginPage(),
       );
     },
+    SignupRoute.name: (routeData) {
+      return AdaptivePage<dynamic>(
+        routeData: routeData,
+        child: const SignupPage(),
+      );
+    },
   };
 
   @override
@@ -56,6 +62,10 @@ class _$AppRouter extends RootStackRouter {
         RouteConfig(
           LoginRoute.name,
           path: '/login',
+        ),
+        RouteConfig(
+          SignupRoute.name,
+          path: '/signup',
         ),
       ];
 }
@@ -94,4 +104,16 @@ class LoginRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'LoginRoute';
+}
+
+/// generated route for
+/// [SignupPage]
+class SignupRoute extends PageRouteInfo<void> {
+  const SignupRoute()
+      : super(
+          SignupRoute.name,
+          path: '/signup',
+        );
+
+  static const String name = 'SignupRoute';
 }
