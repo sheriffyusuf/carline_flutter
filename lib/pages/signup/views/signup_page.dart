@@ -1,6 +1,5 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:carline_flutter/gen/colors.gen.dart';
-import 'package:carline_flutter/router/router.dart';
 import 'package:carline_flutter/widgets/app_outlined_button/app_outlined_button.dart';
 import 'package:carline_flutter/widgets/custom_button/custom_button.dart';
 import 'package:carline_flutter/widgets/input_decoration/input_decoration.dart';
@@ -11,8 +10,8 @@ import 'package:icons_plus/icons_plus.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:tabler_icons/tabler_icons.dart';
 
-class LoginPage extends HookWidget {
-  const LoginPage({super.key});
+class SignupPage extends HookWidget {
+  const SignupPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,16 +27,20 @@ class LoginPage extends HookWidget {
               children: [
                 80.height,
                 Text(
-                  'Sign in to Carline',
+                  'Sign Up',
                   style: context.textTheme.headline3?.copyWith(height: 1.25),
                 ),
-                8.height,
-                Text(
-                  'Welcome back! Please enter your details.',
-                  style: context.textTheme.subtitle1
-                      ?.copyWith(color: AppColor.gray500, height: 1.65),
-                ),
                 24.height,
+                TextField(
+                  decoration: inputDecoration(
+                      hintText: 'Fullname',
+                      prefixIcon: const Icon(
+                        TablerIcons.user,
+                        color: AppColor.gray400,
+                        size: 20,
+                      )),
+                ),
+                16.height,
                 TextField(
                   decoration: inputDecoration(
                       hintText: 'Email',
@@ -70,15 +73,25 @@ class LoginPage extends HookWidget {
                       )),
                 ),
                 16.height,
-                Row(
+                Wrap(
+                  direction: Axis.horizontal,
+                  spacing: 4,
+                  runSpacing: 4,
+                  crossAxisAlignment: WrapCrossAlignment.end,
                   children: [
+                    Text('By signing up, you agree to our?',
+                        style: context.textTheme.titleMedium
+                            ?.copyWith(color: AppColor.gray500)),
                     Text(
-                      'Forgot Password?',
-                      style: context.textTheme.bodyMedium,
+                      'Terms of Service',
+                      style: context.textTheme.button
+                          ?.copyWith(color: AppColor.primary),
                     ),
-                    4.width,
+                    Text('and',
+                        style: context.textTheme.titleMedium
+                            ?.copyWith(color: AppColor.gray500)),
                     Text(
-                      'Reset it',
+                      'Privacy Policy',
                       style: context.textTheme.button
                           ?.copyWith(color: AppColor.primary),
                     ),
@@ -86,7 +99,7 @@ class LoginPage extends HookWidget {
                 ),
                 30.height,
                 CarlineButton(
-                  title: 'Sign In',
+                  title: 'Sign Up',
                   onPressed: () => true,
                   variant: "primary",
                 ),
@@ -112,16 +125,16 @@ class LoginPage extends HookWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Don't have an account?",
+                      "Already have an account?",
                       style: context.textTheme.titleMedium
                           ?.copyWith(color: AppColor.gray900),
                     ),
                     4.width,
                     Text(
-                      'Sign Up',
+                      'Sign in',
                       style: context.textTheme.button
                           ?.copyWith(color: AppColor.primary),
-                    ).onTap(() => context.pushRoute(const SignupRoute()),
+                    ).onTap(() => context.popRoute(),
                         splashColor: Colors.transparent),
                   ],
                 ),
