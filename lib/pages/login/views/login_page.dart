@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:carline_flutter/gen/colors.gen.dart';
 import 'package:carline_flutter/router/router.dart';
 import 'package:carline_flutter/widgets/app_outlined_button/app_outlined_button.dart';
+import 'package:carline_flutter/widgets/app_outlined_button/models/outlined_button_type.dart';
 import 'package:carline_flutter/widgets/custom_button/custom_button.dart';
 import 'package:carline_flutter/widgets/input_decoration/input_decoration.dart';
 import 'package:flutter/material.dart';
@@ -93,6 +94,7 @@ class LoginPage extends HookWidget {
                 16.height,
                 AppOutlinedButton(
                   title: 'Continue with Google',
+                  buttonType: OutlinedButtonType.secondary,
                   icon: Logo(
                     Logos.google,
                     size: 20,
@@ -101,6 +103,7 @@ class LoginPage extends HookWidget {
                 16.height,
                 AppOutlinedButton(
                   title: 'Continue with Apple',
+                  buttonType: OutlinedButtonType.secondary,
                   icon: Logo(
                     Logos.apple,
                     color: Colors.black,

@@ -1,6 +1,8 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:carline_flutter/gen/colors.gen.dart';
+import 'package:carline_flutter/router/router.dart';
 import 'package:carline_flutter/widgets/app_outlined_button/app_outlined_button.dart';
+import 'package:carline_flutter/widgets/app_outlined_button/models/outlined_button_type.dart';
 import 'package:carline_flutter/widgets/custom_button/custom_button.dart';
 import 'package:carline_flutter/widgets/input_decoration/input_decoration.dart';
 import 'package:flutter/material.dart';
@@ -100,12 +102,13 @@ class SignupPage extends HookWidget {
                 30.height,
                 CarlineButton(
                   title: 'Sign Up',
-                  onPressed: () => true,
+                  onPressed: () => context.pushRoute(const OtpRoute()),
                   variant: "primary",
                 ),
                 16.height,
                 AppOutlinedButton(
                   title: 'Continue with Google',
+                  buttonType: OutlinedButtonType.secondary,
                   icon: Logo(
                     Logos.google,
                     size: 20,
@@ -114,6 +117,7 @@ class SignupPage extends HookWidget {
                 16.height,
                 AppOutlinedButton(
                   title: 'Continue with Apple',
+                  buttonType: OutlinedButtonType.secondary,
                   icon: Logo(
                     Logos.apple,
                     color: Colors.black,

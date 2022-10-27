@@ -24,6 +24,7 @@ dependencies:
   hooks_riverpod: ^2.0.2
   icons_plus: ^3.0.0
   nb_utils: ^4.6.21
+  pinput: ^2.2.16
   riverpod_annotation: ^1.0.4
   tabler_icons: ^0.0.3
 
@@ -68,4 +69,5 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/svgs/
     - assets/

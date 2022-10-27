@@ -41,6 +41,12 @@ class _$AppRouter extends RootStackRouter {
         child: const SignupPage(),
       );
     },
+    OtpRoute.name: (routeData) {
+      return AdaptivePage<dynamic>(
+        routeData: routeData,
+        child: const OtpPage(),
+      );
+    },
   };
 
   @override
@@ -66,6 +72,10 @@ class _$AppRouter extends RootStackRouter {
         RouteConfig(
           SignupRoute.name,
           path: '/signup',
+        ),
+        RouteConfig(
+          OtpRoute.name,
+          path: '/otp',
         ),
       ];
 }
@@ -116,4 +126,16 @@ class SignupRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'SignupRoute';
+}
+
+/// generated route for
+/// [OtpPage]
+class OtpRoute extends PageRouteInfo<void> {
+  const OtpRoute()
+      : super(
+          OtpRoute.name,
+          path: '/otp',
+        );
+
+  static const String name = 'OtpRoute';
 }

@@ -3,6 +3,7 @@ import 'package:carline_flutter/gen/assets.gen.dart';
 import 'package:carline_flutter/gen/colors.gen.dart';
 import 'package:carline_flutter/router/router.dart';
 import 'package:carline_flutter/widgets/app_outlined_button/app_outlined_button.dart';
+import 'package:carline_flutter/widgets/app_outlined_button/models/outlined_button_type.dart';
 import 'package:carline_flutter/widgets/custom_button/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -65,7 +66,7 @@ class GettingStartedPage extends HookWidget {
                 16.height,
                 AppOutlinedButton(
                   title: 'Continue with Google',
-                  variant: "primaryTwo",
+                  buttonType: OutlinedButtonType.primaryTwo,
                   icon: Logo(
                     Logos.google,
                     size: 20,
@@ -74,7 +75,7 @@ class GettingStartedPage extends HookWidget {
                 16.height,
                 AppOutlinedButton(
                   title: 'Continue with Apple',
-                  variant: "primaryTwo",
+                  buttonType: OutlinedButtonType.primaryTwo,
                   icon: Logo(
                     Logos.apple,
                     color: Colors.white,
