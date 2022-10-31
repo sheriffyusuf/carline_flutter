@@ -45,6 +45,7 @@ class AppOutlinedButton extends StatelessWidget {
           text: title,
           width: double.infinity,
           textColor: buttonStyle.textColor,
+          elevation: 0.0,
           //   textColor: variants[variant]?["textColor"] ?? AppColor.gray900,
           textStyle: context.textTheme.titleMedium?.copyWith(
               height: 1.65,

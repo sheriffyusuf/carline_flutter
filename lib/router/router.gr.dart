@@ -47,6 +47,12 @@ class _$AppRouter extends RootStackRouter {
         child: const OtpPage(),
       );
     },
+    ForgotPasswordRoute.name: (routeData) {
+      return AdaptivePage<dynamic>(
+        routeData: routeData,
+        child: const ForgotPasswordPage(),
+      );
+    },
   };
 
   @override
@@ -76,6 +82,10 @@ class _$AppRouter extends RootStackRouter {
         RouteConfig(
           OtpRoute.name,
           path: '/otp',
+        ),
+        RouteConfig(
+          ForgotPasswordRoute.name,
+          path: '/forgot-password',
         ),
       ];
 }
@@ -138,4 +148,16 @@ class OtpRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'OtpRoute';
+}
+
+/// generated route for
+/// [ForgotPasswordPage]
+class ForgotPasswordRoute extends PageRouteInfo<void> {
+  const ForgotPasswordRoute()
+      : super(
+          ForgotPasswordRoute.name,
+          path: '/forgot-password',
+        );
+
+  static const String name = 'ForgotPasswordRoute';
 }

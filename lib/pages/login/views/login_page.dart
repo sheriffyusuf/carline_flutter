@@ -82,7 +82,9 @@ class LoginPage extends HookWidget {
                       'Reset it',
                       style: context.textTheme.button
                           ?.copyWith(color: AppColor.primary),
-                    ),
+                    ).onTap(
+                        () => context.pushRoute(const ForgotPasswordRoute()),
+                        splashColor: Colors.transparent),
                   ],
                 ),
                 30.height,

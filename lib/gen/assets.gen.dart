@@ -38,8 +38,12 @@ class $AssetsSvgsGen {
   SvgGenImage get emptyState =>
       const SvgGenImage('assets/svgs/empty_state.svg');
 
+  /// File path: assets/svgs/forgot_password.svg
+  SvgGenImage get forgotPassword =>
+      const SvgGenImage('assets/svgs/forgot_password.svg');
+
   /// List of all assets
-  List<SvgGenImage> get values => [emptyState];
+  List<SvgGenImage> get values => [emptyState, forgotPassword];
 }
 
 class Assets {
