@@ -53,6 +53,12 @@ class _$AppRouter extends RootStackRouter {
         child: const ForgotPasswordPage(),
       );
     },
+    NewPasswordRoute.name: (routeData) {
+      return AdaptivePage<dynamic>(
+        routeData: routeData,
+        child: const NewPasswordPage(),
+      );
+    },
   };
 
   @override
@@ -86,6 +92,10 @@ class _$AppRouter extends RootStackRouter {
         RouteConfig(
           ForgotPasswordRoute.name,
           path: '/forgot-password',
+        ),
+        RouteConfig(
+          NewPasswordRoute.name,
+          path: '/new-password',
         ),
       ];
 }
@@ -160,4 +170,16 @@ class ForgotPasswordRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'ForgotPasswordRoute';
+}
+
+/// generated route for
+/// [NewPasswordPage]
+class NewPasswordRoute extends PageRouteInfo<void> {
+  const NewPasswordRoute()
+      : super(
+          NewPasswordRoute.name,
+          path: '/new-password',
+        );
+
+  static const String name = 'NewPasswordRoute';
 }
