@@ -23,6 +23,7 @@ dependencies:
   google_fonts: ^3.0.1
   hooks_riverpod: ^2.0.2
   icons_plus: ^3.0.0
+  local_auth: ^2.1.2
   nb_utils: ^4.6.21
   pinput: ^2.2.16
   riverpod_annotation: ^1.0.4

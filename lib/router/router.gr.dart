@@ -59,6 +59,12 @@ class _$AppRouter extends RootStackRouter {
         child: const NewPasswordPage(),
       );
     },
+    LocalAuthRoute.name: (routeData) {
+      return AdaptivePage<dynamic>(
+        routeData: routeData,
+        child: const LocalAuthPage(),
+      );
+    },
   };
 
   @override
@@ -96,6 +102,10 @@ class _$AppRouter extends RootStackRouter {
         RouteConfig(
           NewPasswordRoute.name,
           path: '/new-password',
+        ),
+        RouteConfig(
+          LocalAuthRoute.name,
+          path: '/local-auth',
         ),
       ];
 }
@@ -182,4 +192,16 @@ class NewPasswordRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'NewPasswordRoute';
+}
+
+/// generated route for
+/// [LocalAuthPage]
+class LocalAuthRoute extends PageRouteInfo<void> {
+  const LocalAuthRoute()
+      : super(
+          LocalAuthRoute.name,
+          path: '/local-auth',
+        );
+
+  static const String name = 'LocalAuthRoute';
 }

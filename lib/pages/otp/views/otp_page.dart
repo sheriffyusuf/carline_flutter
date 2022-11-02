@@ -1,5 +1,7 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:carline_flutter/gen/assets.gen.dart';
 import 'package:carline_flutter/gen/colors.gen.dart';
+import 'package:carline_flutter/router/router.dart';
 import 'package:carline_flutter/widgets/app_outlined_button/app_outlined_button.dart';
 import 'package:carline_flutter/widgets/custom_button/custom_button.dart';
 import 'package:flutter/material.dart';
@@ -81,7 +83,7 @@ class OtpPage extends HookWidget {
                 const Spacer(),
                 CarlineButton(
                   title: 'Continue',
-                  onPressed: () => true,
+                  onPressed: () => context.pushRoute(const LocalAuthRoute()),
                   variant: "primary",
                 ),
                 16.height,

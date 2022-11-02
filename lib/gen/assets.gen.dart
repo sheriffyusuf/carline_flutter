@@ -34,9 +34,15 @@ class $AssetsImagesGen {
 class $AssetsSvgsGen {
   const $AssetsSvgsGen();
 
+  /// File path: assets/svgs/biometric.svg
+  SvgGenImage get biometric => const SvgGenImage('assets/svgs/biometric.svg');
+
   /// File path: assets/svgs/empty_state.svg
   SvgGenImage get emptyState =>
       const SvgGenImage('assets/svgs/empty_state.svg');
+
+  /// File path: assets/svgs/face_id.svg
+  SvgGenImage get faceId => const SvgGenImage('assets/svgs/face_id.svg');
 
   /// File path: assets/svgs/forgot_password.svg
   SvgGenImage get forgotPassword =>
@@ -47,7 +53,8 @@ class $AssetsSvgsGen {
       const SvgGenImage('assets/svgs/password_change.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values => [emptyState, forgotPassword, passwordChange];
+  List<SvgGenImage> get values =>
+      [biometric, emptyState, faceId, forgotPassword, passwordChange];
 }
 
 class Assets {
