@@ -65,6 +65,12 @@ class _$AppRouter extends RootStackRouter {
         child: const LocalAuthPage(),
       );
     },
+    PickInterestRoute.name: (routeData) {
+      return AdaptivePage<dynamic>(
+        routeData: routeData,
+        child: const PickInterestPage(),
+      );
+    },
   };
 
   @override
@@ -106,6 +112,10 @@ class _$AppRouter extends RootStackRouter {
         RouteConfig(
           LocalAuthRoute.name,
           path: '/local-auth',
+        ),
+        RouteConfig(
+          PickInterestRoute.name,
+          path: '/pick-interest',
         ),
       ];
 }
@@ -204,4 +214,16 @@ class LocalAuthRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'LocalAuthRoute';
+}
+
+/// generated route for
+/// [PickInterestPage]
+class PickInterestRoute extends PageRouteInfo<void> {
+  const PickInterestRoute()
+      : super(
+          PickInterestRoute.name,
+          path: '/pick-interest',
+        );
+
+  static const String name = 'PickInterestRoute';
 }

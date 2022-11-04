@@ -6,6 +6,7 @@ import 'package:carline_flutter/pages/login/views/login_page.dart';
 import 'package:carline_flutter/pages/login/views/new_password_page.dart';
 import 'package:carline_flutter/pages/onboarding/views/onboarding_page.dart';
 import 'package:carline_flutter/pages/otp/views/otp_page.dart';
+import 'package:carline_flutter/pages/pick_interest/views/pick_interest_page.dart';
 import 'package:carline_flutter/pages/signup/views/signup_page.dart';
 import 'package:flutter/material.dart';
 
@@ -20,6 +21,7 @@ part 'router.gr.dart';
   AutoRoute(page: ForgotPasswordPage, path: '/forgot-password'),
   AutoRoute(page: NewPasswordPage, path: '/new-password'),
   AutoRoute(page: LocalAuthPage, path: '/local-auth'),
+  AutoRoute(page: PickInterestPage, path: '/pick-interest'),
 ])
 // extend the generated private router
 class AppRouter extends _$AppRouter {}
