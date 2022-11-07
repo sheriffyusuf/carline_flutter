@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: AppColor.primary,
         textTheme: GoogleFonts.urbanistTextTheme(
           TextTheme(
-              caption: boldTextStyle(size: 14),
+              caption: boldTextStyle(size: 14, height: 1.70),
               headline5: boldTextStyle(size: 28, height: 1.30),
               headline3: boldTextStyle(
                 size: 32,

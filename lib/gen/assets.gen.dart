@@ -54,12 +54,24 @@ class $AssetsSvgsGen {
   SvgGenImage get forgotPassword =>
       const SvgGenImage('assets/svgs/forgot_password.svg');
 
+  /// File path: assets/svgs/heart.svg
+  SvgGenImage get heart => const SvgGenImage('assets/svgs/heart.svg');
+
+  /// File path: assets/svgs/home.svg
+  SvgGenImage get home => const SvgGenImage('assets/svgs/home.svg');
+
   /// File path: assets/svgs/lambo.svg
   SvgGenImage get lambo => const SvgGenImage('assets/svgs/lambo.svg');
+
+  /// File path: assets/svgs/message.svg
+  SvgGenImage get message => const SvgGenImage('assets/svgs/message.svg');
 
   /// File path: assets/svgs/password_change.svg
   SvgGenImage get passwordChange =>
       const SvgGenImage('assets/svgs/password_change.svg');
+
+  /// File path: assets/svgs/profile.svg
+  SvgGenImage get profile => const SvgGenImage('assets/svgs/profile.svg');
 
   /// File path: assets/svgs/tesla.svg
   SvgGenImage get tesla => const SvgGenImage('assets/svgs/tesla.svg');
@@ -72,8 +84,12 @@ class $AssetsSvgsGen {
         faceId,
         ford,
         forgotPassword,
+        heart,
+        home,
         lambo,
+        message,
         passwordChange,
+        profile,
         tesla
       ];
 }
