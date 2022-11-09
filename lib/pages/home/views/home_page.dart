@@ -1,6 +1,9 @@
 import 'package:badges/badges.dart';
+import 'package:carline_flutter/gen/colors.gen.dart';
+import 'package:carline_flutter/pages/home/widgets/home_skeleton.dart';
 import 'package:carline_flutter/utils/extensions/app_widget_extensions.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:tabler_icons/tabler_icons.dart';
 
@@ -40,6 +43,33 @@ class HomePage extends StatelessWidget {
             ],
           ).paddingSymmetric(vertical: 10.0),
           16.height,
+          Container(
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(16),
+                color: AppColor.gray100),
+            padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                TextField(
+                  decoration: InputDecoration.collapsed(
+                    hintText: 'Search',
+                    hintStyle: GoogleFonts.urbanist(),
+                  ),
+                ).expand(),
+                const Icon(
+                  TablerIcons.search,
+                  color: AppColor.gray900,
+                ).onTap(
+                  () => true,
+                  splashColor: Colors.transparent,
+                )
+              ],
+            ),
+          ),
+          24.height,
+          const HomeSkeleton()
         ],
       ).paddingSymmetric(horizontal: 24.0),
     ));
