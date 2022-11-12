@@ -40,14 +40,11 @@ class HomeSkeleton extends StatelessWidget {
                 childAspectRatio: 0.9),
             itemBuilder: ((context, index) {
               return Container(
-                  // padding: EdgeInsets.all(4.0),
                   padding: const EdgeInsets.all(10.0),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
                       border: Border.all(color: AppColor.gray200),
-                      borderRadius: BorderRadius.circular(16)
-                      //   border: Border.all(color: color ?? ColorName.black5),
-                      ),
+                      borderRadius: BorderRadius.circular(16)),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
