@@ -26,13 +26,9 @@ class LocalAuthPage extends HookWidget {
         if (availableBiometrics.contains(BiometricType.face)) {
           biometricTypeName.value = 'Face ID';
           biometricType.value = BiometricType.face;
-          // Specific types of biometrics are available.
-          // Use checks like this with caution!
         } else if (availableBiometrics.contains(BiometricType.fingerprint)) {
           biometricTypeName.value = 'Fingerprint';
           biometricType.value = BiometricType.fingerprint;
-          // Specific types of biometrics are available.
-          // Use checks like this with caution!
         }
       }
 
