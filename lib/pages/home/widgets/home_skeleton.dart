@@ -167,7 +167,7 @@ class HomeSkeleton extends StatelessWidget {
                       ],
                     ),
                   ],
-                ).expand(),
+                ),
               );
             })).withHeight(300)
       ],
