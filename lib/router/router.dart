@@ -19,6 +19,7 @@ import 'package:flutter/material.dart';
 part 'router.gr.dart';
 
 @AdaptiveAutoRouter(replaceInRouteName: 'Page,Route', routes: <AutoRoute>[
+  AutoRoute(page: OnboardingPage, path: '/onboarding'),
   AutoRoute(
       path: "/",
       page: DashboardPage,
@@ -67,7 +68,6 @@ part 'router.gr.dart';
         ),
       ],
       initial: true),
-  AutoRoute(page: OnboardingPage, path: '/onboarding'),
   AutoRoute(page: GettingStartedPage, path: '/getting-started'),
   AutoRoute(page: LoginPage, path: '/login'),
   AutoRoute(page: SignupPage, path: '/signup'),

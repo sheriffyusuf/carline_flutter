@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
               headline3: boldTextStyle(
                 size: 32,
               ),
+              headline6: boldTextStyle(size: 18),
               button: boldTextStyle(size: 16),
               subtitle1: const TextStyle(fontWeight: FontWeight.w500)),
         ),

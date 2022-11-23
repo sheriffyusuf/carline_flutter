@@ -1,6 +1,6 @@
 import 'package:badges/badges.dart';
 import 'package:carline_flutter/gen/colors.gen.dart';
-import 'package:carline_flutter/pages/home/widgets/home_skeleton.dart';
+import 'package:carline_flutter/pages/home/widgets/home_body.dart';
 import 'package:carline_flutter/utils/extensions/app_widget_extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -69,7 +69,8 @@ class HomePage extends StatelessWidget {
             ),
           ),
           24.height,
-          const HomeSkeleton()
+          //const HomeSkeleton()
+          const HomeBody()
         ],
       ).paddingSymmetric(horizontal: 24.0),
     ));

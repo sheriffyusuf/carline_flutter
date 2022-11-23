@@ -17,16 +17,16 @@ class _$AppRouter extends RootStackRouter {
 
   @override
   final Map<String, PageFactory> pagesMap = {
-    DashboardRoute.name: (routeData) {
-      return AdaptivePage<dynamic>(
-        routeData: routeData,
-        child: const DashboardPage(),
-      );
-    },
     OnboardingRoute.name: (routeData) {
       return AdaptivePage<dynamic>(
         routeData: routeData,
         child: const OnboardingPage(),
+      );
+    },
+    DashboardRoute.name: (routeData) {
+      return AdaptivePage<dynamic>(
+        routeData: routeData,
+        child: const DashboardPage(),
       );
     },
     GettingStartedRoute.name: (routeData) {
@@ -130,6 +130,10 @@ class _$AppRouter extends RootStackRouter {
   @override
   List<RouteConfig> get routes => [
         RouteConfig(
+          OnboardingRoute.name,
+          path: '/onboarding',
+        ),
+        RouteConfig(
           DashboardRoute.name,
           path: '/',
           children: [
@@ -212,10 +216,6 @@ class _$AppRouter extends RootStackRouter {
           ],
         ),
         RouteConfig(
-          OnboardingRoute.name,
-          path: '/onboarding',
-        ),
-        RouteConfig(
           GettingStartedRoute.name,
           path: '/getting-started',
         ),
@@ -251,6 +251,18 @@ class _$AppRouter extends RootStackRouter {
 }
 
 /// generated route for
+/// [OnboardingPage]
+class OnboardingRoute extends PageRouteInfo<void> {
+  const OnboardingRoute()
+      : super(
+          OnboardingRoute.name,
+          path: '/onboarding',
+        );
+
+  static const String name = 'OnboardingRoute';
+}
+
+/// generated route for
 /// [DashboardPage]
 class DashboardRoute extends PageRouteInfo<void> {
   const DashboardRoute({List<PageRouteInfo>? children})
@@ -261,18 +273,6 @@ class DashboardRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'DashboardRoute';
-}
-
-/// generated route for
-/// [OnboardingPage]
-class OnboardingRoute extends PageRouteInfo<void> {
-  const OnboardingRoute()
-      : super(
-          OnboardingRoute.name,
-          path: '/onboarding',
-        );
-
-  static const String name = 'OnboardingRoute';
 }
 
 /// generated route for
