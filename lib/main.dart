@@ -21,8 +21,20 @@ class MyApp extends StatelessWidget {
       title: 'Carline',
       theme: ThemeData(
         primarySwatch: AppColor.primary,
+        scaffoldBackgroundColor: Colors.white,
+        appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.white,
+            foregroundColor: Colors.black,
+            elevation: 0.0,
+            scrolledUnderElevation: 1.0),
         textTheme: GoogleFonts.urbanistTextTheme(
           TextTheme(
+              overline: const TextStyle(
+                  fontSize: 12,
+                  color: AppColor.gray500,
+                  height: 1.70,
+                  letterSpacing: 0.5,
+                  fontWeight: FontWeight.w500),
               caption: boldTextStyle(size: 14, height: 1.70),
               headline5: boldTextStyle(size: 28, height: 1.30),
               headline3: boldTextStyle(
