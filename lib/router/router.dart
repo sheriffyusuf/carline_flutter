@@ -12,6 +12,7 @@ import 'package:carline_flutter/pages/message/views/message_page.dart';
 import 'package:carline_flutter/pages/onboarding/views/onboarding_page.dart';
 import 'package:carline_flutter/pages/otp/views/otp_page.dart';
 import 'package:carline_flutter/pages/pick_interest/views/pick_interest_page.dart';
+import 'package:carline_flutter/pages/pick_location/views/pick_location_page.dart';
 import 'package:carline_flutter/pages/profile/views/profile_page.dart';
 import 'package:carline_flutter/pages/signup/views/signup_page.dart';
 import 'package:flutter/material.dart';
@@ -68,6 +69,7 @@ part 'router.gr.dart';
         ),
       ],
       initial: true),
+  AutoRoute(page: PickLocationPage, path: '/pick-location'),
   AutoRoute(page: GettingStartedPage, path: '/getting-started'),
   AutoRoute(page: LoginPage, path: '/login'),
   AutoRoute(page: SignupPage, path: '/signup'),

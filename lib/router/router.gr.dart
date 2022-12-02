@@ -29,6 +29,12 @@ class _$AppRouter extends RootStackRouter {
         child: const DashboardPage(),
       );
     },
+    PickLocationRoute.name: (routeData) {
+      return AdaptivePage<dynamic>(
+        routeData: routeData,
+        child: const PickLocationPage(),
+      );
+    },
     GettingStartedRoute.name: (routeData) {
       return AdaptivePage<dynamic>(
         routeData: routeData,
@@ -216,6 +222,10 @@ class _$AppRouter extends RootStackRouter {
           ],
         ),
         RouteConfig(
+          PickLocationRoute.name,
+          path: '/pick-location',
+        ),
+        RouteConfig(
           GettingStartedRoute.name,
           path: '/getting-started',
         ),
@@ -273,6 +283,18 @@ class DashboardRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'DashboardRoute';
+}
+
+/// generated route for
+/// [PickLocationPage]
+class PickLocationRoute extends PageRouteInfo<void> {
+  const PickLocationRoute()
+      : super(
+          PickLocationRoute.name,
+          path: '/pick-location',
+        );
+
+  static const String name = 'PickLocationRoute';
 }
 
 /// generated route for
