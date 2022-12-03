@@ -14,6 +14,9 @@ import 'package:flutter/services.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/audi.png
+  AssetGenImage get audi => const AssetGenImage('assets/images/audi.png');
+
   /// File path: assets/images/car_one.png
   AssetGenImage get carOne => const AssetGenImage('assets/images/car_one.png');
 
@@ -27,12 +30,20 @@ class $AssetsImagesGen {
   /// File path: assets/images/icon_bg.png
   AssetGenImage get iconBg => const AssetGenImage('assets/images/icon_bg.png');
 
+  /// File path: assets/images/test_drive.png
+  AssetGenImage get testDrive =>
+      const AssetGenImage('assets/images/test_drive.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [carOne, carThree, carTwo, iconBg];
+  List<AssetGenImage> get values =>
+      [audi, carOne, carThree, carTwo, iconBg, testDrive];
 }
 
 class $AssetsSvgsGen {
   const $AssetsSvgsGen();
+
+  /// File path: assets/svgs/audi_logo.svg
+  SvgGenImage get audiLogo => const SvgGenImage('assets/svgs/audi_logo.svg');
 
   /// File path: assets/svgs/biometric.svg
   SvgGenImage get biometric => const SvgGenImage('assets/svgs/biometric.svg');
@@ -78,6 +89,7 @@ class $AssetsSvgsGen {
 
   /// List of all assets
   List<SvgGenImage> get values => [
+        audiLogo,
         biometric,
         bmw,
         emptyState,
