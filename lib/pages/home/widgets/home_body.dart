@@ -1,7 +1,9 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:carline_flutter/extensions/list_map_with_index_extension.dart';
 import 'package:carline_flutter/gen/assets.gen.dart';
 import 'package:carline_flutter/gen/colors.gen.dart';
 import 'package:carline_flutter/pages/home/widgets/car_card.dart';
+import 'package:carline_flutter/router/router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -120,10 +122,13 @@ class HomeBody extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text('Car recommendation', style: context.textTheme.headline6),
-            Text(
-              'View all',
-              style: GoogleFonts.urbanist(
-                  color: AppColor.gray500, fontWeight: FontWeight.w300),
+            GestureDetector(
+              onTap: () => context.pushRoute(const ListCarRoute()),
+              child: Text(
+                'View all',
+                style: GoogleFonts.urbanist(
+                    color: AppColor.gray500, fontWeight: FontWeight.w300),
+              ),
             )
           ],
         ).paddingSymmetric(horizontal: 24.0),

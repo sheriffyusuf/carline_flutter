@@ -83,6 +83,12 @@ class _$AppRouter extends RootStackRouter {
         child: const PickInterestPage(),
       );
     },
+    ListCarRoute.name: (routeData) {
+      return AdaptivePage<dynamic>(
+        routeData: routeData,
+        child: const ListCarPage(),
+      );
+    },
     HomeRouter.name: (routeData) {
       return AdaptivePage<dynamic>(
         routeData: routeData,
@@ -257,6 +263,10 @@ class _$AppRouter extends RootStackRouter {
           PickInterestRoute.name,
           path: '/pick-interest',
         ),
+        RouteConfig(
+          ListCarRoute.name,
+          path: '/list-car',
+        ),
       ];
 }
 
@@ -391,6 +401,18 @@ class PickInterestRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'PickInterestRoute';
+}
+
+/// generated route for
+/// [ListCarPage]
+class ListCarRoute extends PageRouteInfo<void> {
+  const ListCarRoute()
+      : super(
+          ListCarRoute.name,
+          path: '/list-car',
+        );
+
+  static const String name = 'ListCarRoute';
 }
 
 /// generated route for

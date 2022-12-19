@@ -30,13 +30,16 @@ class $AssetsImagesGen {
   /// File path: assets/images/icon_bg.png
   AssetGenImage get iconBg => const AssetGenImage('assets/images/icon_bg.png');
 
+  /// File path: assets/images/jeep.png
+  AssetGenImage get jeep => const AssetGenImage('assets/images/jeep.png');
+
   /// File path: assets/images/test_drive.png
   AssetGenImage get testDrive =>
       const AssetGenImage('assets/images/test_drive.png');
 
   /// List of all assets
   List<AssetGenImage> get values =>
-      [audi, carOne, carThree, carTwo, iconBg, testDrive];
+      [audi, carOne, carThree, carTwo, iconBg, jeep, testDrive];
 }
 
 class $AssetsSvgsGen {

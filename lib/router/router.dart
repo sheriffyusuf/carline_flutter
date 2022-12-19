@@ -4,6 +4,7 @@ import 'package:carline_flutter/pages/dashboard/views/dashboard_page.dart';
 import 'package:carline_flutter/pages/favorites/views/favorites_page.dart';
 import 'package:carline_flutter/pages/getting_started/views/getting_started_page.dart';
 import 'package:carline_flutter/pages/home/views/home_page.dart';
+import 'package:carline_flutter/pages/list_car/views/list_car_page.dart';
 import 'package:carline_flutter/pages/local_auth/views/local_auth_page.dart';
 import 'package:carline_flutter/pages/login/views/forgot_password_page.dart';
 import 'package:carline_flutter/pages/login/views/login_page.dart';
@@ -78,6 +79,7 @@ part 'router.gr.dart';
   AutoRoute(page: NewPasswordPage, path: '/new-password'),
   AutoRoute(page: LocalAuthPage, path: '/local-auth'),
   AutoRoute(page: PickInterestPage, path: '/pick-interest'),
+  AutoRoute(page: ListCarPage, path: '/list-car'),
 ])
 // extend the generated private router
 class AppRouter extends _$AppRouter {}
