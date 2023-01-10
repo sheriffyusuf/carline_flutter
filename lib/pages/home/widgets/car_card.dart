@@ -1,5 +1,7 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:carline_flutter/gen/assets.gen.dart';
 import 'package:carline_flutter/gen/colors.gen.dart';
+import 'package:carline_flutter/router/router.dart';
 import 'package:flutter/material.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:tabler_icons/tabler_icons.dart';
@@ -28,7 +30,10 @@ class CarCard extends StatelessWidget {
             ],
           ),
           16.height,
-          Assets.images.audi.image(),
+          GestureDetector(
+            child: Assets.images.audi.image(),
+            onTap: () => context.pushRoute(const CarDetailRoute()),
+          ),
           8.height,
           Row(
             children: [

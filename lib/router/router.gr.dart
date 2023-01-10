@@ -89,6 +89,12 @@ class _$AppRouter extends RootStackRouter {
         child: const ListCarPage(),
       );
     },
+    CarDetailRoute.name: (routeData) {
+      return AdaptivePage<dynamic>(
+        routeData: routeData,
+        child: const CarDetailPage(),
+      );
+    },
     HomeRouter.name: (routeData) {
       return AdaptivePage<dynamic>(
         routeData: routeData,
@@ -267,6 +273,10 @@ class _$AppRouter extends RootStackRouter {
           ListCarRoute.name,
           path: '/list-car',
         ),
+        RouteConfig(
+          CarDetailRoute.name,
+          path: '/car-detail',
+        ),
       ];
 }
 
@@ -413,6 +423,18 @@ class ListCarRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'ListCarRoute';
+}
+
+/// generated route for
+/// [CarDetailPage]
+class CarDetailRoute extends PageRouteInfo<void> {
+  const CarDetailRoute()
+      : super(
+          CarDetailRoute.name,
+          path: '/car-detail',
+        );
+
+  static const String name = 'CarDetailRoute';
 }
 
 /// generated route for

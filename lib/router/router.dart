@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:auto_route/empty_router_widgets.dart';
+import 'package:carline_flutter/pages/car_detail/views/car_detail_page.dart';
 import 'package:carline_flutter/pages/dashboard/views/dashboard_page.dart';
 import 'package:carline_flutter/pages/favorites/views/favorites_page.dart';
 import 'package:carline_flutter/pages/getting_started/views/getting_started_page.dart';
@@ -80,6 +81,7 @@ part 'router.gr.dart';
   AutoRoute(page: LocalAuthPage, path: '/local-auth'),
   AutoRoute(page: PickInterestPage, path: '/pick-interest'),
   AutoRoute(page: ListCarPage, path: '/list-car'),
+  AutoRoute(page: CarDetailPage, path: '/car-detail'),
 ])
 // extend the generated private router
 class AppRouter extends _$AppRouter {}
